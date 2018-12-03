@@ -1,0 +1,61 @@
+// Import theming functions
+@import '~@angular/material/theming';
+
+// mixin name will be used in main style.scss
+@mixin login-theme($theme) {
+
+    $primary: map-get($theme, primary);
+
+
+    mat-form-field {
+        width: 90%;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 0% !important;
+        background-color: #fff;
+        -webkit-box-shadow: 2px 4px 58px -20px rgba(0,0,0,1);
+        -moz-box-shadow: 2px 4px 58px -20px rgba(0,0,0,1);
+        box-shadow: 2px 4px 58px -20px rgba(0,0,0,1);
+    }
+        
+    .login-box-header{
+        width: auto;
+        // background-color: #673ab7;
+        background-color: mat-color($primary);
+        text-align: center;
+        vertical-align: middle;
+        font-size: 2em;
+        padding: 2%;
+        color: #fff;
+    }
+        
+    .login-box-body{
+        width: auto;
+        height:100%;
+        padding: 5% 5% 5% 5%;
+        color: #d2d2d2;
+    }
+        
+    .login-icon{
+        margin-top: -2px;
+    }
+        
+    .justifier {
+        width: 100%;
+        padding-bottom: 2%;
+    }
+        
+    .login-button{
+        width: 100%;
+        padding:1.5% !important;
+        // background-color: #673ab7;
+        background-color: mat-color($primary);
+        font-size: 1.5em;
+        color: #fff !important;
+    }
+
+
+
+}
