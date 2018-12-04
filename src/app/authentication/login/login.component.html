@@ -1,8 +1,3 @@
-<!-- <mat-grid-list cols="3"> -->
-    <!-- <mat-grid-tile></mat-grid-tile> -->
- 
-    <!-- Writing markup for login starts -->
-    <!-- <mat-grid-tile class='login-element'> -->
       <div class="login-element" fxLayout="row" fxLayoutAlign="center">
         <div class="login-container" fxFlex="40%">
  
@@ -17,41 +12,29 @@
                 <form novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit()">
  
                 <!-- Markup for getting Username starts -->
-                <!-- <mat-grid-list cols="9" rowHeight="75px"> -->
                   <div fxLayout="row">
-                    <!-- <mat-grid-tile [rowspan]="1" class="login-icon"> -->
                       <div fxFlex="50pt">
                         <mat-icon>lock</mat-icon>
                       </div>
-                    <!-- </mat-grid-tile> -->
-                    <!-- <mat-grid-tile [colspan]="8"> -->
                       <div fxFlex="100%">
                         <mat-form-field>
                             <input matInput placeholder="Username" text="text" formControlName="username">
                         </mat-form-field>
                       </div>
-                    <!-- </mat-grid-tile> -->
                   </div>
-                <!-- </mat-grid-list> -->
                 <!-- Markup for getting Username ends -->
  
                 <!-- Markup for getting Password starts -->
-                <!-- <mat-grid-list cols="9" rowHeight="100px"> -->
                 <div fxLayout="row">
-                    <!-- <mat-grid-tile [rowspan]="1"  class="login-icon"> -->
                       <div fxFlex="50pt">
                         <mat-icon>remove_red_eye</mat-icon>
                       </div>
                       
-                    <!-- </mat-grid-tile> -->
-                    <!-- <mat-grid-tile [colspan]="8"> -->
                       <div fxFlex="100%">
                         <mat-form-field>
                             <input matInput placeholder="Password" text="password" formControlName="password">
                         </mat-form-field>
                       </div>
-                    <!-- </mat-grid-tile> -->
-                <!-- </mat-grid-list> -->
                 </div>
                 <!-- Markup for getting Password ends -->
  
@@ -65,8 +48,4 @@
             
         </div>
       </div>
-    <!-- </mat-grid-tile> -->
     <!-- Writing markup for login ends -->
-    <!-- <mat-grid-tile></mat-grid-tile> -->
- 
-<!-- </mat-grid-list> -->

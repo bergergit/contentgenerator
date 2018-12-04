@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private loginService: LoginService) { }
 
   ngOnInit() {
-    this.createForm();
+    // this.createForm();
+    this.loginService.handleAuthentication();
   }
 
   createForm() {
@@ -24,6 +25,8 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
   }
+
+  /*
 
   isAuthenticated(): Boolean {
     return this.user !== null;
@@ -39,8 +42,10 @@ export class LoginComponent implements OnInit {
         console.error('Login error', err);
       });
     }
+
+    *
     
   }
-
+  */
 
 }

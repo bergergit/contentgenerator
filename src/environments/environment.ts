@@ -4,7 +4,12 @@
 
 export const environment = {
   production: false,
-  LOGIN_URL: 'http://apps.bergermobile.com.br/bmauth/user?appName=appsadmin&realm=appsadmin'
+  LOGIN_URL: 'http://apps.bergermobile.com.br/bmauth/user?appName=appsadmin&realm=appsadmin',
+  auth_config: {
+    clientID: 'Dmq9Gp6fdPl8tOtAMq2PHJScU5Otk9JS',
+    domain: 'fabioberger.auth0.com',
+    callbackURL: 'http://localhost:4200/callback'
+  }
 };
 
 /*
