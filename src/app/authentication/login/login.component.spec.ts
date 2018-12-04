@@ -4,6 +4,9 @@ import { LoginComponent } from './login.component';
 import { DebugElement } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCardModule, MatGridListModule, MatInputModule, MatCheckboxModule, MatIconModule } from '@angular/material';
+import { RouterTestingModule } from '@angular/router/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -16,8 +19,17 @@ describe('LoginComponent', () => {
       declarations: [ LoginComponent ],
       imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        MatGridListModule,
+        MatInputModule,
+        MatCheckboxModule,
+        MatIconModule,
+        RouterTestingModule
+    
       ]
     })
     .compileComponents();

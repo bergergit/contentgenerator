@@ -15,10 +15,12 @@ import { RouterOutlet, RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavigationComponent', () => {
+  
   let component: NavigationComponent;
   let fixture: ComponentFixture<NavigationComponent>;
 
   beforeEach(async(() => {
+    
     TestBed.configureTestingModule({
       declarations: [
         NavigationComponent, 
@@ -39,12 +41,15 @@ describe('NavigationComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(NavigationComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = fixture.debugElement.componentInstance;
+    // fixture.detectChanges();
   });
 
   it('should compile', () => {
     expect(component).toBeTruthy();
     expect(fixture).toBeTruthy();
   });
+
+  
+  
 });

@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule, MatInputModule, MatCheckboxModule, MatIconModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -18,7 +20,7 @@ import { MatGridListModule, MatInputModule, MatCheckboxModule, MatIconModule } f
     MatInputModule,
     MatCheckboxModule,
     MatIconModule,
-
+    FlexLayoutModule
   ],
   providers: [
     FormBuilder

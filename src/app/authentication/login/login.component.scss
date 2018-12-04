@@ -5,6 +5,7 @@
 @mixin login-theme($theme) {
 
     $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
 
 
     mat-form-field {
@@ -12,6 +13,7 @@
     }
 
     .login-container {
+        margin-top: 50px;
         width: 100%;
         padding: 0% !important;
         background-color: #fff;
@@ -51,7 +53,7 @@
         width: 100%;
         padding:1.5% !important;
         // background-color: #673ab7;
-        background-color: mat-color($primary);
+        background-color: mat-color($accent, darker);
         font-size: 1.5em;
         color: #fff !important;
     }

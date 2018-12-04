@@ -8,9 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { HomeComponent } from './home/home.component';
-// import { LoginComponent } from './login/login.component';
-import { FormBuilder } from '@angular/forms';
-// import { AuthenticationModule } from './authentication/authentication.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,10 +26,10 @@ import { FormBuilder } from '@angular/forms';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    // AuthenticationModule
+    HttpClientModule
   ],
   providers: [
-    
+
   ],
   bootstrap: [AppComponent]
 })
